@@ -1,0 +1,81 @@
+    <div class="container" >
+      
+      
+      <!--toggle add product-->
+        <div style="margin: 20px;">
+        <a class="btn btn-primary" data-toggle="modal" href='#modal-id'>Add Product</a>
+        <div class="modal fade" id="modal-id">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                        <h4 class="modal-title">Add Product</h4>
+                    </div>
+                    <div class="modal-body">
+                        
+                      
+                      <form  role="form">
+                        
+                      
+                          <div class="form-group">
+                              <label for="">Name</label>
+                              <input type="text" class="form-control" id="" placeholder="Input field">
+                          </div>
+                      
+                          
+                          <div class="form-group">
+                            <label for="">img</label>
+                            <input type="text" class="form-control" id="" placeholder="Input field">
+                            
+                            <div style="margin-top: 10px;">
+                                <img src="assets/img/anh1.jpg" class="img-responsive" style="width: 300px;">
+                            
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="">Desciption</label>
+                            <input type="text" class="form-control" id="" placeholder="Input field">
+                        </div>
+                        <div class="form-group">
+                            <label for="">Desciption</label>
+                            <select name="" id="input" class="form-control" required="required" >
+                                <option  value="1">Choose Category</option>
+                                
+                                <option *ngFor="let item of categoryList" [value]="item.id">{{item.name}}</option>
+                                
+                         
+                            </select>
+                        </div>
+                        
+                      
+                        
+                          <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-primary">Save changes</button>
+                        </div>
+                      </form>
+                      
+                        
+                    </div>
+                   
+                </div>
+            </div>
+        </div>
+       </div>
+      
+       <!--show all product-->
+       
+              <div *ngFor="let item of productList" >
+        <div class="col-md-4">
+            <div class="card" style="width:300px">
+                <img class="card-img-top" src="{{item.img}}" alt="Card image" style="width:100%">
+                <div class="card-body">
+                  <h4 class="card-title">{{item.name}}</h4>
+                  <p class="card-text">{{item.description}}</p>
+                  <a  class="btn btn-primary">Xem chi tiet</a>
+                </div>
+              </div>
+        </div>
+    </div>
+      </div>

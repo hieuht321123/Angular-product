@@ -1,0 +1,31 @@
+{
+    "product": [
+      {   "id":1,
+        "name" : "Nguyen Van A",
+        "img" :"assets/img/anh1.jpg",
+        "idCategory": 2,
+        "description": "mo ta"
+      },
+      {   "id":2,
+        "name" : "Nguyen Van S",
+        "img" :"assets/img/anh2.jpg",
+        "idCategory": 1,
+        "description": "mo ta"
+      },
+      {   "id":1,
+        "name" : "Nguyen Van A3",
+        "img" :"assets/img/anh3.jpg",
+        "idCategory": 1,
+        "description": "mo ta"
+      }
+    ],
+    "category": [
+      { "id": 1, "name": "Ao" },
+      { "id": 2, "name": "Giay" },
+      { "id": 3, "name": "Quan" }
+
+
+
+    ],
+    "profile": { "name": "typicode" }
+  }
